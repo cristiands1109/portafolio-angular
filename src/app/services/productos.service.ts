@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ProductoIdxInterface } from '../interfaces/productosidx.interface';
-import { ProductoDes } from '../interfaces/productodes.interface';
-import { resolve } from 'dns';
-import { reject } from 'q';
+
 
 @Injectable({
   providedIn: 'root'
