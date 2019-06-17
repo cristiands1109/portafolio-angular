@@ -1,13 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// componentes
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
+
+// rutas
 import { APP_ROUTING } from './app-routing-module';
+
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -21,7 +27,8 @@ import { APP_ROUTING } from './app-routing-module';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
